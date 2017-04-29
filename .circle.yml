@@ -1,0 +1,10 @@
+machine:
+  python:
+    version: 3.5.1
+
+compile:
+  override:
+    - python manage.py collectstatic --noinput
+test:
+  override:
+    - python manage.py test
